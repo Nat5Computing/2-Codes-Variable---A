@@ -1,8 +1,8 @@
 import subprocess
 
-def test_variables_exploration():
+def test_variables_explore():
     try:
-        result = subprocess.run(["python3", "variables_exploration.py"], capture_output=True, text=True)
+        result = subprocess.run(["python3", "variables_explore.py"], capture_output=True, text=True)
         if result.returncode != 0:
             print("❌ Your program crashed and could not run.")
             print("🔧 Error message:")
@@ -16,4 +16,4 @@ def test_variables_exploration():
     print("✅ Your program ran successfully! Now try editing and testing variable names.")
     
 if __name__ == "__main__":
-    test_variables_exploration()
+    test_variables_explore()
